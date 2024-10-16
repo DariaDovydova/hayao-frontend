@@ -19,7 +19,7 @@ export const CheckoutForm = () => {
       try {
         const { id } = paymentMethod;
         const response = await axios.post(
-          "http://localhost:8080/stripe/charge",
+          "https://hayao-backend-1.onrender.com//stripe/charge",
           {
             amount: 999,
             id: id,
